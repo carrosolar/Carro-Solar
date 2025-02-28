@@ -1,0 +1,576 @@
+/* html{
+    scroll-snap-type: y mandatory;
+} */
+
+body{
+    margin: 0px;
+}
+
+.container{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: rgba(172, 255, 47, 0);
+}
+
+
+.i{
+    width: 100%;
+    height: 100vh;
+
+    background-image: url("c3.png");
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+
+    position: relative;
+    overflow: hidden;
+
+}
+
+.i button{
+    border: none;
+    width: 205.63px;
+    height: 68.2px;
+    border-radius: 80px;
+    background-color: #fedb03;
+
+    position: absolute;
+
+    top: 82%; /* Ajusta estos valores */
+    left: 9.5%; /* para alinear con el botón de la imagen */
+    transform: translate(-50%, -50%);
+    
+
+}
+
+a{
+    color: #5D410E;
+    font-family: "Albert Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 21px;
+    text-decoration: none;
+
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.videos{
+    width: 100%;
+    height: auto;
+
+    background-color: rgb(255, 255, 255);
+    scroll-snap-align: start;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: "Albert Sans", serif;
+    font-optical-sizing: auto;
+
+    margin-top: 100px;
+
+}
+
+
+.videos img{
+    width: 50%;
+}
+
+.videos h1{
+
+    margin-top: 0px;
+
+    font-family: "Albert Sans", serif;
+
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 60px;
+    font-variation-settings:
+        "YEAR" 1979;
+}
+
+#videoContainer{
+    font-family: "Albert Sans", serif;
+    font-optical-sizing: auto;
+}
+
+.videoContainer{
+    width: 100%;
+    height: 150vh;
+    background-color: transparent;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+
+    justify-items: center; /* Centra los elementos horizontalmente */
+    align-items: center;
+
+    overflow: hidden;
+
+    font-family: "Albert Sans", serif;
+    font-optical-sizing: auto;
+
+    
+}
+
+.p{
+    width: 200px;
+    height: 100px;
+
+    background-color: rgba(135, 207, 235, 0);
+    gap: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+video::-webkit-media-controls-panel {
+    box-shadow: none;
+  }
+
+video {
+    box-shadow: none;
+    gap: 40px;
+  }
+
+  #hola{
+    font-size: 600px;
+    color: transparent;
+  }
+
+#contacto h1{
+    
+
+    margin-bottom: 0px;
+
+    font-family: "Albert Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 60px;
+    font-variation-settings:
+        "YEAR" 1979;
+}
+
+#contacto{
+    background-color: white;
+
+    width: 100%;
+    height: 99vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contactoInterno{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+
+}
+
+.formContainer{
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
+.infoContactoContainer{
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+label{
+    font-family: "Albert Sans", serif;
+    font-optical-sizing: auto;
+
+}
+
+input{
+    outline: none;
+    font-family: "Albert Sans", serif;
+    font-optical-sizing: auto;
+
+    border: none;
+    border-bottom: 1px solid;
+
+}
+
+.infoContactoContainer{
+    font-family: "Albert Sans", serif;
+    font-optical-sizing: auto;
+}
+
+
+
+.sobre{
+    width: 100%;
+    height: 200%;
+
+    font-family: "Albert Sans", serif;
+    font-optical-sizing: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: whitesmoke;
+}
+
+.sobre h1{
+    font-family: "Albert Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 60px;
+    font-variation-settings:
+        "YEAR" 1979;
+}
+
+.sobre img{
+    border-radius: 5px;
+    width: 70%;
+}
+
+.sobre video{
+    border-radius: 5px;
+    width: 70%;
+}
+
+.sobre h3{
+    margin-top: 40px;
+}
+
+.sobre p{
+    width: 50%;
+    text-align: center;
+}
+
+.barraLado{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.barraLado h2{
+    text-align: center;
+}
+
+.barraLado p{
+    text-align: justify;
+}
+
+#urbana{
+    hyphens: auto;
+}
+
+.queEs{
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.tecnicas{
+
+    margin-top: 100px;
+    margin-bottom: 200px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.carrusel{
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+
+    overflow: scroll;
+}
+
+
+.carrusel{
+    width: 50%;
+    height: 10000px;
+}
+
+.carrusel img{
+    margin-left: 200px;
+}
+
+#act{
+    width: 50%;
+    text-align: justify;
+}
+
+.prototipoTexto{
+    width: 40%;
+    text-align: justify;
+    margin-left: 150px;
+}
+
+.productContainer{
+    width: 50%;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    background-color: rgba(255, 0, 0, 0);
+
+
+}
+
+.sideContainer{
+    width: 20%;
+    height: 100%;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: rgba(172, 255, 47, 0);
+}
+
+
+
+.sideContainer img{
+
+    max-width: 50%;
+    margin: 10px;
+    aspect-ratio    : 1/1;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid grey;
+
+}
+
+
+.sideContainer img:hover{
+
+    border: 4px solid rgb(46, 118, 181);
+
+}
+
+
+.mainContainer{
+    height: 100%;
+    width: 80%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: rgba(127, 255, 212, 0);
+
+}
+
+.mainContainer img{
+    width: 100%;
+    height: auto;
+
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+
+.mainContainer video{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4/3;
+    object-fit: contain;
+}
+
+.entrevistasContainer{
+
+    margin-top: 100px;
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+    background-color: whitesmoke;
+}
+
+.entrevistasContainer h1{
+
+    font-family: "Albert Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 60px;
+    font-variation-settings:
+        "YEAR" 1979;
+}
+
+.principal{
+    width: 100%;
+    height: 100vh;
+
+    background-image: url("carro-solar.png");
+    background-size: cover;
+    background-position: center;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+
+}
+
+.barraMenu{
+    width: 100%;
+    height: 10%;
+    background-color: rgba(255, 0, 0, 0);
+
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    
+}
+
+.barraMenu a{
+    margin: 10px;
+
+    color: white;
+}
+
+.mainPrincipal{
+    width: auto;
+    height: 60%;
+
+    background-color: rgba(172, 255, 47, 0);
+
+    padding-left: 12%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mainPrincipal h1{
+    font-family: "Albert Sans", serif;
+    font-size: 70px;
+    color: white;
+
+    margin-bottom: 40px;
+}
+
+.mainPrincipal button{
+    width: 10%;
+    height: 10%;
+    border-radius: 25px;
+    border: none;
+    font-family: "Albert Sans", serif;
+    font-weight: 900;
+
+
+}
+
+.mainPrincipal button:hover{
+    background-color: white;
+    width: 11%;
+}
+
+.mainPrincipal button:active{
+    background-color: whitesmoke;
+    width: 10%;
+    height: 9%;
+}
+
+.elementsContainer{
+    margin-right: 10%;
+}
+
+
+html, body{
+    scrollbar-color: black rgba(255, 255, 255, 0.081);
+    /* scrollbar-width: thin; */
+    scroll-behavior: smooth;
+}
+
+.impacto{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.impacto img{
+    width: 60%;
+
+    margin: 80px;
+
+    border-radius: 20px;
+}
+
+.impacto h1{
+    font-family: "Albert Sans", serif;
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.impacto h2{
+    font-family: "Albert Sans", serif;
+}
+
+::selection {
+    background-color: #02b051b3; /* Cambia el fondo de la selección */
+    color: white; /* Cambia el color del texto seleccionado */
+  }
+
+
+  
